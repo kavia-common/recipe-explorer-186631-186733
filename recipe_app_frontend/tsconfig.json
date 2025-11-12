@@ -1,20 +1,18 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/out-tsc",
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ES2022",
     "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "moduleResolution": "bundler",
-    "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022",
-    "jsx": "react-jsx"
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "types": ["vite/client"]
   },
+  "include": ["src"]
 }
